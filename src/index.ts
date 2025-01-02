@@ -14,7 +14,7 @@ import { userModel, contentModel, shareModel } from "./db";
 
 const app = express();
 
-const PORT  =  process.env.PORT || 3000;
+const PORT  =   3000;
 const Users: number = 0;
 const Visit: number = 0;
 const saltRounds: number = 5;
