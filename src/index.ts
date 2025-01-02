@@ -9,13 +9,12 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-console.log(process.env.JWT_SECRET);
 
 import { userModel, contentModel, shareModel } from "./db";
 
 const app = express();
 
-const PORT: number = 3000;
+const PORT  =  process.env.PORT || 3000;
 const Users: number = 0;
 const Visit: number = 0;
 const saltRounds: number = 5;
